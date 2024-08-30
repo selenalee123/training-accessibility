@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developing for Web Accessibility</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add a New User</h1>
+    </header>
+    <main>
+        <section>
+            <h2>New User Details</h2>
+            <form action="#" id="newUser">
+                <label for="username">
+                    Username (Required)
+                </label>
+                <input type="text" id="username" aria-required="true"/>
+                <label for="email">Email (Required)</label>
+                <input type="text" id="email"  aria-required="true" />
+                <label for="phoneNumber">Phone (Optional)</label>
+                <input type="tel" id="phoneNumber" />
+                <fieldset>
+                    <legend>Access Rights (Required)</legend>
+                    
+                    <input type="radio" id="admin" name="accessRights" value="admin"/>
+                    <label for="admin">Admin</label>
+                    
+                    <input type="radio" id="readOnly" name="accessRights" value="read-only"/>
+                    <label for="readOnly">Read-Only</label>
+                </fieldset>
+                <input type="checkbox" id="includeTutorial" />
+                <label for="includeTutorial">Include Tutorial Link in Welcome Email</label>
+                <button type="submit">Create New User</button>
+            </form>
+        </section>
+        
+    </main>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+</html>

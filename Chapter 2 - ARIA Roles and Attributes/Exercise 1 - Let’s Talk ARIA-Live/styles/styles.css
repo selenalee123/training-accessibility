@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.player {
+    max-width: 35rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.player h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.player p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.playerControls button {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 1rem;
+    background-color: transparent;
+    border: none;
+    padding: 0.8rem;
+}
+
+.playerControls button:hover {
+    border-radius: 0.4rem;
+    background-color: lightblue;
+}
+
+[data-status="paused"] .pause {
+    display: none;
+}
+
+[data-status="playing"] .play {
+    display: none;
+}

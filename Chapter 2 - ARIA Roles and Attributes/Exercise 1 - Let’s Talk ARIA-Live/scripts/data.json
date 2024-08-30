@@ -1,0 +1,119 @@
+{
+    "songs": [
+        {
+            "title": "American Pie",
+            "artist": "Don McLean",
+            "year": "1972"
+        },
+        {
+            "title": "Banana Pancakes",
+            "artist": "Jack Johnson",
+            "year": "2005"
+        },
+        {
+            "title": "Brown Eyed Girl",
+            "artist": "Van Morrison",
+            "year": "1967"
+        },
+        {
+            "title": "Cat's in the Cradle",
+            "artist": "Harry Chapin",
+            "year": "1974"
+        },
+        {
+            "title": "Creep",
+            "artist": "Radiohead",
+            "year": "1993"
+        },
+        {
+            "title": "Don't Stop Believin'",
+            "artist": "Journey",
+            "year": "1981"
+        },
+        {
+            "title": "Folsom Prison Blues",
+            "artist": "Johnny Cash",
+            "year": "1957"
+        },
+        {
+            "title": "Free Fallin'",
+            "artist": "Tom Petty",
+            "year": "1989"
+        },
+        {
+            "title": "Hey Soul Sister",
+            "artist": "Train",
+            "year": "2009"
+        },
+        {
+            "title": "Ho Hey",
+            "artist": "The Lumineers",
+            "year": "2012"
+        },
+        {
+            "title": "I Knew You Were Trouble",
+            "artist": "Taylor Swift",
+            "year": "2012"
+        },
+        {
+            "title": "I Won't Give Up",
+            "artist": "Jason Mraz",
+            "year": "2012"
+        },
+        {
+            "title": "Jack & Diane",
+            "artist": "John Mellencamp",
+            "year": "1982"
+        },
+        {
+            "title": "Little Talks",
+            "artist": "Of Monsters and Men",
+            "year": "2012"
+        },
+        {
+            "title": "Party in the USA",
+            "artist": "Miley Cyrus",
+            "year": "2009"
+        },
+        {
+            "title": "Rocket Man",
+            "artist": "Elton John",
+            "year": "1972"
+        },
+        {
+            "title": "Some Nights",
+            "artist": "fun.",
+            "year": "2012"
+        },
+        {
+            "title": "Stuck in the Middle With You",
+            "artist": "Stealers Wheel",
+            "year": "1972"
+        },
+        {
+            "title": "Summer of '69",
+            "artist": "Bryan Adams",
+            "year": "1984"
+        },
+        {
+            "title": "Sweet Home Alabama",
+            "artist": "Lynyrd Skynyrd",
+            "year": "1974"
+        },
+        {
+            "title": "The Weight",
+            "artist": "The Band",
+            "year": "1968"
+        },
+        {
+            "title": "Tiny Dancer",
+            "artist": "Elton John",
+            "year": "1971"
+        },
+        {
+            "title": "Viva La Vida",
+            "artist": "Coldplay",
+            "year": "2008"
+        }
+    ]
+}

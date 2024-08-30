@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developing for Web Accessibility</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <h1>"Music Player"</h1>
+    <main>
+        <section id="player" class="player">
+            <img src="./images/album-placeholder.png" 
+                alt="album placeholder"
+                aria-hidden="true"/>
+            <h2>
+                <span class="sr-only">Now Playing</span>
+                <span id="songTitle"></span>
+            </h2>
+            <p id="songArtist"></p>
+        </section>
+        <section id="playerControls" class="playerControls" data-status='paused'>
+            <div class="flex">
+                <button type="button" id="previous" aria-label="previous song">
+                    <img src="./images/back.png" 
+                        aria-hidden="true"
+                        alt="previous song"
+                        class="album"
+                    />
+                </button>
+                <button type="button" id="play" aria-label="play" >
+                    <img src="./images/play.png" 
+                        alt="Play"
+                    aria-hidden="true" 
+                    class="play"
+                    />
+                    <img src="./images/pause.png" 
+                        alt="Pause"
+                        aria-hidden="true" 
+                        class="pause"
+                    />
+                </button>
+                <button type="button" id="next" aria-label="next song">
+                    <img src="./images/next.png" 
+                        aria-hidden="true" 
+                        alt="next song"
+                    />
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developing for Web Accessibility</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Semantic Form Inputs</h1>
+    </header>
+    <main>
+        <section>
+            <h2>New User</h2>
+            <form action="#">
+                <label>Username (Required)</label>
+                <input type="text" />
+                <label>Email (Required)</label>
+                <input type="text" />
+                <label>Phone (Optional)</label>
+                <input type="tel" />
+                <div>
+                    <p>Access Rights (Required)</p>
+
+                    <input type="radio" name="accessRights" />
+                    <label>Admin</label>
+
+                    <input type="radio" name="accessRights" />
+                    <label>Read-Only</label>
+                </div>
+
+                <input type="checkbox" />
+                <label>Include Tutorial Link in Welcome Email</label>
+                <button type="submit">Create New User</button>
+            </form>
+        </section>
+
+    </main>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+
+</html>

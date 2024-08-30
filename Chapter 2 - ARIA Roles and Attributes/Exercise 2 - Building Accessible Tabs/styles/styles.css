@@ -1,0 +1,28 @@
+.tab-list button {
+    background-color: transparent;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid gray;
+    position: relative;
+    top: 1px;
+    z-index: 2;
+}
+
+.tab-list button[aria-selected="true"] {
+    border-bottom: 1px solid white;
+    border-top: 5px solid lightblue;
+}
+
+.tab-list button:hover {
+    text-decoration: underline;
+}
+
+.tab-panel {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.tab-panel:not(.active) {
+    display: none;
+}

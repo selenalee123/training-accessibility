@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 75px;
+}
+
+li {
+    margin: 5px;
+}
+
+nav, .nav {
+    display: flex;
+}
+
+nav li, .nav li {
+    list-style: none;
+}
+
+nav a, .nav a {
+    margin: 5px;
+}
+
+button, .button {
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+button:hover, .button:hover {
+    background-color: transparent;
+}
