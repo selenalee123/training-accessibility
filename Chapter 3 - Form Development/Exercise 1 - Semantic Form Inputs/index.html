@@ -16,21 +16,22 @@
         <section>
             <h2>New User</h2>
             <form action="#">
-                <label>Username (Required)</label>
-                <input type="text" />
+                <label for="username">Username (Required)</label>
+                <input type="text" id="text" required/>
                 <label>Email (Required)</label>
-                <input type="text" />
+
+                <input type="text"  id="email" required/>
                 <label>Phone (Optional)</label>
                 <input type="tel" />
-                <div>
-                    <p>Access Rights (Required)</p>
-
-                    <input type="radio" name="accessRights" />
-                    <label>Admin</label>
-
-                    <input type="radio" name="accessRights" />
-                    <label>Read-Only</label>
-                </div>
+                <fieldset>
+                    <legend>Access Rights (Required)</legend>
+                                    
+                    <input type="radio" id="admin" name="accessRights" required />
+                    <label for="admin">Admin</label>
+                                    
+                    <input type="radio" id="readOnly" name="accessRights" required/>
+                    <label for="readOnly">Read-Only</label>
+                </fieldset>
 
                 <input type="checkbox" />
                 <label>Include Tutorial Link in Welcome Email</label>
