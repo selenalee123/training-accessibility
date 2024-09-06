@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developing for Web Accessibility</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Add a New User</h1>
@@ -13,31 +15,47 @@
     <main>
         <section>
             <h2>New User Details</h2>
-            <form action="#" id="newUser">
-                <label for="username">
-                    Username (Required)
-                </label>
-                <input type="text" id="username" aria-required="true"/>
-                <label for="email">Email (Required)</label>
-                <input type="text" id="email"  aria-required="true" />
-                <label for="phoneNumber">Phone (Optional)</label>
-                <input type="tel" id="phoneNumber" />
+            <div id="formErrorsList" role="alert"></div>
+            <form action="" method="post" id="newUser">
+                <div>
+                    <label for="username"><strong></strong> Username (Required)</label>
+                    <input type="text" id="username" aria-describedby="usernameDesc" aria-required="true" />
+                    <span id="usernameDesc"></span>
+                </div>
+                <div>
+                    <label for="email"><strong></strong> Email (Required)</label>
+                    <input type="email" id="email" aria-describedby="emailDesc" aria-required="true" />
+                    <span id="emailDesc"></span>
+                </div>
+                <div>
+                    <label for="phoneNumber"><strong></strong> Phone (Optional)</label>
+                    <input type="tel" id="phoneNumber" aria-describedby="phoneNumberDesc" />
+                    <span id="phoneNumberDesc"></span>
+                </div>
+
                 <fieldset>
-                    <legend>Access Rights (Required)</legend>
-                    
-                    <input type="radio" id="admin" name="accessRights" value="admin"/>
+                    <legend><strong></strong> Access Rights (Required)</legend>
+
+                    <input type="radio" id="admin" name="accessRights" aria-required="true"
+                        aria-describedby="accessRightsDesc" value="Admin"/>
                     <label for="admin">Admin</label>
-                    
-                    <input type="radio" id="readOnly" name="accessRights" value="read-only"/>
+
+                    <input type="radio" id="readOnly" name="accessRights" aria-required="true"
+                        aria-describedby="accessRightsDesc" value="Read-Only"/>
                     <label for="readOnly">Read-Only</label>
+
+                    <span id="accessRightsDesc"></span>
                 </fieldset>
-                <input type="checkbox" id="includeTutorial" />
-                <label for="includeTutorial">Include Tutorial Link in Welcome Email</label>
+                <div>
+                    <input type="checkbox" id="includeTutorial" />
+                    <label for="includeTutorial"><strong></strong> Include Tutorial Link in Welcome Email</label>
+                </div>
                 <button type="submit">Create New User</button>
             </form>
         </section>
-        
+
     </main>
-    <script type="text/javascript" src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/solution1.js"></script>
 </body>
+
 </html>
